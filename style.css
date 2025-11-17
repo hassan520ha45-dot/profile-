@@ -5,20 +5,28 @@
 }
 
 body {
-    font-family: 'Segoe UI', 'Arial', 'Helvetica', sans-serif;
+    font-family: 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Arial', sans-serif;
     background: #ffffff;
     color: #333;
     line-height: 1.7;
     scroll-behavior: smooth;
+    font-weight: 400;
+    letter-spacing: -0.01em;
 }
 
 p {
     margin-bottom: 12px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
     margin-top: 0;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
 }
 
 /* Cover Page */
@@ -117,39 +125,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-text {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 120px;
-    font-weight: bold;
+    font-weight: 700;
     color: #d4af37;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin-bottom: 10px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
+    line-height: 1;
 }
 
 .logo-company {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
     color: #d4af37;
     text-align: center;
     margin-bottom: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
 }
 
 .logo-tagline {
+    font-family: 'Poppins', 'Inter', sans-serif;
     font-size: 16px;
     color: #ffffff;
     text-align: center;
-    font-weight: normal;
+    font-weight: 500;
     margin-bottom: 10px;
+    letter-spacing: 0.5px;
 }
 
 .logo-subtagline {
+    font-family: 'Poppins', 'Inter', sans-serif;
     font-size: 12px;
     color: #ffffff;
     text-align: center;
-    font-weight: normal;
+    font-weight: 400;
     margin-top: 8px;
-    line-height: 1.4;
+    line-height: 1.5;
     padding: 0 20px;
+    letter-spacing: 0.2px;
 }
 
 .cover-info {
@@ -160,18 +176,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cover-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 700;
     color: #1a3a5f;
     margin-bottom: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 .cover-subtitle {
+    font-family: 'Poppins', 'Inter', sans-serif;
     font-size: 18px;
     color: #1a3a5f;
     margin-bottom: 20px;
+    font-weight: 400;
     font-style: italic;
+    letter-spacing: 0.3px;
 }
 
 .cover-presented {
@@ -181,10 +202,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cover-name {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     color: #1a3a5f;
     margin-bottom: 5px;
+    letter-spacing: 0.5px;
 }
 
 .cover-position {
@@ -224,17 +247,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .company-name {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 700;
     color: #d4af37;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 .company-tagline {
+    font-family: 'Poppins', 'Inter', sans-serif;
     font-size: 14px;
     color: #1a3a5f;
-    font-weight: normal;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
 /* Welcome Section */
@@ -287,6 +314,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 36px;
     font-weight: 700;
     color: #1a3a5f;
@@ -295,6 +323,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 5px;
     position: relative;
     padding-bottom: 10px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
 
 .section-title::after {
@@ -361,6 +391,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #444;
     font-size: 16px;
     line-height: 1.9;
+    text-align: left;
 }
 
 .message-content p {
@@ -499,29 +530,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-heading {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 38px;
     font-weight: 700;
     color: #1a3a5f;
     margin-bottom: 20px;
-    margin-left: 200px;
+    margin-left: 0;
+    text-align: center;
     position: relative;
     padding-bottom: 8px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
 
 .section-heading::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 60px;
     height: 3px;
     background: linear-gradient(90deg, #d4af37, #1a3a5f);
     border-radius: 2px;
 }
 
+.section-heading[style*="text-align: center"]::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .services-list {
     max-width: 1000px;
-    margin-left: 200px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .service-item {
@@ -530,8 +572,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.7;
     margin-bottom: 12px;
     padding-left: 25px;
+    text-align: left;
     position: relative;
-    transition: transform 0.2s ease, padding-left 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .service-item:hover {
@@ -550,7 +593,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .projects-content {
     max-width: 1000px;
-    margin-left: 200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .projects-content .service-item::before {
@@ -564,18 +608,22 @@ h1, h2, h3, h4, h5, h6 {
 .projects-table-wrapper {
     width: 100%;
     overflow-x: auto;
-    margin: 20px 0;
+    margin: 20px auto;
     -webkit-overflow-scrolling: touch;
+    display: flex;
+    justify-content: center;
 }
 
 .projects-table {
     width: 100%;
     min-width: 600px;
+    max-width: 1000px;
     border-collapse: collapse;
     background: #ffffff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .projects-table thead {
@@ -585,7 +633,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .projects-table th {
     padding: 15px;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     font-size: 16px;
     border: 1px solid #1a3a5f;
@@ -597,6 +645,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #1a3a5f;
     font-size: 14px;
     line-height: 1.6;
+    text-align: center;
 }
 
 .projects-table tbody tr:nth-child(even) {
@@ -615,15 +664,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .projects-subheading {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
     color: #1a3a5f;
     margin-top: 20px;
     margin-bottom: 10px;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
 }
 
 .projects-subheading:first-child {
     margin-top: 0;
+}
+
+.product-range-wrapper {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.product-range-left,
+.product-range-right {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+.product-range-title {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a3a5f;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(26, 58, 95, 0.2);
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+.product-range-left p,
+.product-range-right p {
+    color: #1a3a5f;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    text-align: left;
 }
 
 .product-list {
@@ -634,26 +723,101 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 8px;
     color: #1a3a5f;
     font-size: 16px;
+    text-align: left;
+}
+
+.performance-list {
+    margin-top: 15px;
+}
+
+.performance-list p {
+    margin-bottom: 10px;
+    color: #1a3a5f;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.7;
 }
 
 .quality-content {
     max-width: 1000px;
-    margin-left: 200px;
+    margin: 0 auto;
     color: #1a3a5f;
     font-size: 16px;
     line-height: 1.8;
+    text-align: left;
 }
 
 .quality-content p {
     margin-bottom: 10px;
 }
 
+.quality-contact-wrapper {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.quality-contact-left,
+.quality-contact-right {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+.licenses-list {
+    margin-top: 10px;
+}
+
+.licenses-list p {
+    margin-bottom: 8px;
+    color: #1a3a5f;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.leadership-wrapper {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.leadership-left,
+.leadership-right {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+.advisors-list,
+.management-list {
+    margin-top: 10px;
+}
+
+.advisors-list p,
+.management-list p {
+    margin-bottom: 8px;
+    color: #1a3a5f;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.7;
+}
+
 .team-heading {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 600;
     color: #1a3a5f;
     margin-top: 18px;
     margin-bottom: 8px;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
 }
 
 .team-heading:first-child {
@@ -680,10 +844,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .promise-content {
     max-width: 1000px;
-    margin-left: 200px;
+    margin: 0 auto;
     color: #1a3a5f;
     font-size: 16px;
     line-height: 1.8;
+    text-align: left;
+}
+
+.tagline-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #1a3a5f;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.tagline-content p {
+    margin-bottom: 12px;
+    text-align: center;
 }
 
 .promise-content p {
@@ -802,6 +981,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     line-height: 1.7;
     padding-top: 10px;
+    text-align: left;
 }
 
 /* Mission Section */
@@ -862,11 +1042,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .commitments-heading {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 700;
     color: #1a3a5f;
     text-align: center;
     margin-bottom: 25px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
 
 .commitments-list {
@@ -920,6 +1103,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #444;
     font-size: 16px;
     line-height: 1.7;
+    text-align: left;
 }
 
 .mission-conclusion {
@@ -965,11 +1149,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .thankyou-text {
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 72px;
-    font-weight: bold;
+    font-weight: 700;
     color: #1a3a5f;
     margin-bottom: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    line-height: 1.1;
 }
 
 .thankyou-line {
@@ -996,23 +1182,23 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .section-heading {
-        margin-left: 100px;
+        margin-left: 0;
     }
     
     .services-list {
-        margin-left: 100px;
+        margin-left: 0;
     }
     
     .projects-content {
-        margin-left: 100px;
+        margin-left: 0;
     }
     
     .quality-content {
-        margin-left: 100px;
+        margin-left: 0;
     }
     
     .promise-content {
-        margin-left: 100px;
+        margin: 0 auto;
     }
     
     .content-wrapper {
@@ -1026,6 +1212,18 @@ h1, h2, h3, h4, h5, h6 {
     
     .portrait-container {
         align-self: center;
+    }
+    
+    .product-range-wrapper {
+        gap: 30px;
+    }
+    
+    .quality-contact-wrapper {
+        gap: 30px;
+    }
+    
+    .leadership-wrapper {
+        gap: 30px;
     }
 }
 
@@ -1113,8 +1311,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .promise-content {
-        margin-left: 0;
+        margin: 0 auto;
         max-width: 100%;
+        padding: 0 15px;
     }
     
     .quality-content {
@@ -1130,6 +1329,39 @@ h1, h2, h3, h4, h5, h6 {
     .portrait-circle {
         width: 200px;
         height: 200px;
+    }
+    
+    .product-range-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 15px;
+    }
+    
+    .product-range-left,
+    .product-range-right {
+        width: 100%;
+    }
+    
+    .quality-contact-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 15px;
+    }
+    
+    .quality-contact-left,
+    .quality-contact-right {
+        width: 100%;
+    }
+    
+    .leadership-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 15px;
+    }
+    
+    .leadership-left,
+    .leadership-right {
+        width: 100%;
     }
     
     .vision-items {
@@ -1386,6 +1618,47 @@ h1, h2, h3, h4, h5, h6 {
     .quality-content p {
         font-size: 14px;
     }
+    
+    .product-range-wrapper {
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 10px;
+    }
+    
+    .product-range-title {
+        font-size: 20px;
+    }
+    
+    .product-range-left p,
+    .product-range-right p {
+        font-size: 15px;
+    }
+    
+    .product-list p,
+    .performance-list p {
+        font-size: 14px;
+    }
+    
+    .quality-contact-wrapper {
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 10px;
+    }
+    
+    .licenses-list p {
+        font-size: 14px;
+    }
+    
+    .leadership-wrapper {
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 10px;
+    }
+    
+    .advisors-list p,
+    .management-list p {
+        font-size: 14px;
+    }
 }
 
 /* Print Styles */
@@ -1399,4 +1672,5 @@ h1, h2, h3, h4, h5, h6 {
         page-break-after: always;
     }
 }
+
 
